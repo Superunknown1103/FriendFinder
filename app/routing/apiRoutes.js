@@ -10,11 +10,4 @@ module.exports = function (app) {
 	app.post('/api/friends', function (req, res) {
 		// 
 	});
-
-	app.post('/api/clear', function() {
-		tableData = [];
-		waitListData = [];
-		console.log(tableData);
-		console.log(waitListData);
-	})
 }

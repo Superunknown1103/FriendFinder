@@ -16,3 +16,4 @@ var friends = [
       1
     ]
 }
+];
