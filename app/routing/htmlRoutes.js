@@ -1,17 +1,17 @@
 // html routes are to help direct the user
-// when they click on a link, the router will understand what the page to give them.
+// when they click on a link, the router will understand what page to give them.
 
 var path = require('path');
 
 module.exports = function (app) {
-	// when the user hits tables, I want you to show them tables.
-	app.get('./app/survey', function(req, res) {
+	// when the user hits find your loser, display survey
+	app.get('/survey', function(req, res) {
 		res.sendFile(path.join(__dirname + 
-			'/survey.html'));
+			'/../public/survey.html'));
 	});
 
 	// use will set the default homepage rather than get which is based on user selection.
 	app.use( function(req, res) {
-		res.sendFile(path.join(__dirname + '/home.html'));
+		res.sendFile(path.join(__dirname + '/../public/home.html'));
 	});
 }

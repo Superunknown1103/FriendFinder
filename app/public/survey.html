@@ -16,129 +16,178 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!-- Font Awesome Glyphicons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <!-- Chosen CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 
 </head>
 
 <body>
+   <div class="container">
 
-  <div class="container">
+    <h2>Questionaire</h2>
+    <hr>
 
-    <div class="row">
-      <div class="col-lg-12">
-      <div class="panel panel-default">
-      <div class="panel-heading">
-      <h3> What geek am I looking at here? </h3>
-      </div>
-      <h4>Name (Required)</h4>
-      <input type="text" name id="name" class="form-control" required>
-      <h4>Link to Photo Image (Required) </h4>
-      <input type="text" name id="photo" class= "form-control" required>
-      </div>
+    <h3><strong>Introduce yourself, nerd.</strong></h3>
+    <br>
+    <h4>Name (Required)</h4>
+    <input type="text" name="" id="name" class="form-control" required >
 
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h1>Questionnaire</h1>
-          </div>
-          <div class="panel-body" id="tableSection">
-          <h3 class="question">1. Ubuntu is the superior operating system.</h3>
-      <ul class="answers">
-      <input type="radio" name="quest" id="q" ><label id="1">&nbsp Hell yeah!</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="2">&nbsp Sure.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="3">&nbsp I dunno.</label><br/>
-      <input type="radio" name="quest" id="c" ><label id="4">&nbsp Nah.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="5"> &nbsp NOPE!</label><br/>
-      </ul>
-      <h3 class="question">2. I just want someone to watch Doctor Who with me.</h3>
-      
-      <ul class="answers">
-      <input type="radio" name="quest" id="q" ><label id="1">&nbsp Hell yeah!</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="2">&nbsp Sure.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="3">&nbsp I dunno.</label><br/>
-      <input type="radio" name="quest" id="c" ><label id="4">&nbsp Nah.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="5"> &nbsp NOPE!</label><br/>
-      </ul>
-      <h3 class="question">3. Star Trek > Star Wars</h3>
-      
-      <ul class="answers">
-      <input type="radio" name="quest" id="q" ><label id="1">&nbsp Hell yeah!</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="2">&nbsp Sure.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="3">&nbsp I dunno.</label><br/>
-      <input type="radio" name="quest" id="c" ><label id="4">&nbsp Nah.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="5"> &nbsp NOPE!</label><br/>
-      </ul>
-      <h3 class="question">4. Weird Al's "Stuck in the Drive-Thru"</h3>
-      
-      <ul class="answers">
-      <input type="radio" name="quest" id="q" ><label id="1">&nbsp Hell yeah!</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="2">&nbsp Sure.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="3">&nbsp I dunno.</label><br/>
-      <input type="radio" name="quest" id="c" ><label id="4">&nbsp Nah.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="5"> &nbsp NOPE!</label><br/>
-      </ul>
-      <h3 class="question">5. Have you seen the new VR system??</h3>
-      
-      <ul class="answers">
-      <input type="radio" name="quest" id="q" ><label id="1">&nbsp Hell yeah!</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="2">&nbsp Sure.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="3">&nbsp I dunno.</label><br/>
-      <input type="radio" name="quest" id="c" ><label id="4">&nbsp Nah.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="5"> &nbsp NOPE!</label><br/>
-      </ul>
-      <h3 class="question">6. Androids are so much better than iPhones.</h3>
-      
-      <ul class="answers">
-      <input type="radio" name="quest" id="q" ><label id="1">&nbsp Hell yeah!</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="2">&nbsp Sure.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="3">&nbsp I dunno.</label><br/>
-      <input type="radio" name="quest" id="c" ><label id="4">&nbsp Nah.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="5"> &nbsp NOPE!</label><br/>
-      </ul>
-      <h3 class="question">7. My Prius gets 55 mpg, you jealous?</h3>
-      
-      <ul class="answers">
-      <input type="radio" name="quest" id="q" ><label id="1">&nbsp Hell yeah!</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="2">&nbsp Sure.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="3">&nbsp I dunno.</label><br/>
-      <input type="radio" name="quest" id="c" ><label id="4">&nbsp Nah.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="5"> &nbsp NOPE!</label><br/>
-      </ul>
-      <h3 class="question">8. Who needs sports when you have science class.</h3>
-      
-      <ul class="answers">
-      <input type="radio" name="quest" id="q" ><label id="1">&nbsp Hell yeah!</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="2">&nbsp Sure.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="3">&nbsp I dunno.</label><br/>
-      <input type="radio" name="quest" id="c" ><label id="4">&nbsp Nah.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="5"> &nbsp NOPE!</label><br/>
-      </ul>
-      <h3 class="question">9. Library > Book Store</h3>
-      
-      <ul class="answers">
-      <input type="radio" name="quest" id="q" ><label id="1">&nbsp Hell yeah!</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="2">&nbsp Sure.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="3">&nbsp I dunno.</label><br/>
-      <input type="radio" name="quest" id="c" ><label id="4">&nbsp Nah.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="5"> &nbsp NOPE!</label><br/>
-      </ul>
-       <h3 class="question">10. I have a lego minifigure collection!</h3>
+    <h4>Link to Photo Image (Required)</h4>
+    <input type="text" name="" id="photo" class="form-control" required >
+
+    <hr>
+
+    <h3><strong>Question 1</strong></h3>
+    <h4>Ubuntu is the superior OS.</h4>
+    <select data-placeholder="" class="chosen-select" id="q1">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h3><strong>Question 2</strong></h3>
+    <h4>I just want someone to watch Doctor Who with me.</h4>
+    <select data-placeholder="" class="chosen-select" id="q2">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+    <h3><strong>Question 3</strong></h3>
+    <h4>Star Trek > Star Wars</h4>
+    <select data-placeholder="" class="chosen-select" id="q3">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+    <h3><strong>Question 4</strong></h3>
+    <h4>Weird Al's "Stuck in the Drive Thru" is a masterpiece.</h4>
+    <select data-placeholder="" class="chosen-select" id="q4">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+    <h3><strong>Question 5</strong></h3>
+    <h4>VR is going to improve entertainment forever.</h4>
+    <select data-placeholder="" class="chosen-select" id="q5">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+    <h3><strong>Question 6</strong></h3>
+    <h4>Androids > iPhones </h4>
+    <select data-placeholder="" class="chosen-select" id="q6">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+    <h3><strong>Question 7</strong></h3>
+    <h4>Hybrids are the best cars. They help the enviornment!</h4>
+    <select data-placeholder="" class="chosen-select" id="q7">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h3><strong>Question 8</strong></h3>
+    <h4>Who needs sports when you have science??</h4>
+    <select data-placeholder="" class="chosen-select" id="q8">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h3><strong>Question 9</strong></h3>
+    <h4>Books are better than video games.</h4>
+    <select data-placeholder="" class="chosen-select" id="q9">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <h3><strong>Question 10</strong></h3>
+    <h4>I like legos.</h4>
+    <select data-placeholder="" class="chosen-select" id="q10">
+      <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+    <br>
+    <br>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+ Geek Me!</button>
+
+    <hr>
+     
+
+  </div>
+
+ <script type="text/javascript">
+ // Chosen CSS
+    var config = {
+      '.chosen-select'           : {},
+      '.chosen-select-deselect'  : {allow_single_deselect:true},
+      '.chosen-select-no-single' : {disable_search_threshold:10},
+      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+      '.chosen-select-width'     : {width:"95%"}
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+    // create variable for total score
+    $("#submit").on("click", function() {
+      // Form validation
+      function validateForm() {
+        var isValid = true;
+        $('.form-control').each(function(){
+          if ( $(this).val() === '')
+            isValid = false;
+        });
        
-      <ul class="answers">
-      <input type="radio" name="quest" id="q" ><label id="1">&nbsp Hell yeah!</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="2">&nbsp Sure.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="3">&nbsp I dunno.</label><br/>
-      <input type="radio" name="quest" id="c" ><label id="4">&nbsp Nah.</label><br/>
-      <input type="radio" name="quest" id="q" ><label id="5"> &nbsp NOPE!</label><br/>
-      </ul>
-
-      </div>
-          </div>
-        </div>
-      </div>
-    </div>
-        <button style="margin-left: 200px;" type="button" class="btn btn-lg btn-primary"><i><span class="glyphicon glyphicon-list-alt"></span> Geek Me!</h4></button></div>
-      </div>
-
-    </div>
+    </script>
 
     <footer class="footer">
       <div class="container">
