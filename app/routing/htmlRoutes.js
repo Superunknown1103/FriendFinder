@@ -11,7 +11,7 @@ module.exports = function (app) {
 	});
 
 	// use will set the default homepage rather than get which is based on user selection.
-	app.use( function(req, res) {
+	app.use('/', function(req, res) {
 		res.sendFile(path.join(__dirname + '/../public/home.html'));
 	});
 }
