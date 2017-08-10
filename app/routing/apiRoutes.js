@@ -1,14 +1,14 @@
 // api-routes will give the user the information that they should be seeing.
-var friends = require("..data/friends");
+var friends = require("../data/friends.js");
 
 module.exports = function (app) {
 	app.get('/api/friends', function(req, res){
-	//res.send("Welcome to the Friend Finder!")
+	// res.send("Welcome to the Friend Finder!")
 	res.json(friends);
 });
 
-app.post('api/friends', function(req, res){
-	//res.send("Welcome to the Friend Finder!")
+app.post('/api/friends', function(req, res){
+	// res.send("Welcome to the Friend Finder!")
 	res.json(friends);
 
 	console.log(friends)
