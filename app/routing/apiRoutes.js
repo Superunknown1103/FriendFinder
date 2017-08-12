@@ -7,12 +7,12 @@ module.exports = function (app) {
 	res.json(friends);
 });
 
-app.post('/api/friends', function(req, res){
-	// res.send("Welcome to the Friend Finder!")
-	res.json(friends);
-
-	console.log(friends)
-});
+// app.post('/api/friends', function(req, res){
+// 	// res.send("Welcome to the Friend Finder!")
+// 	res.json(friends);
+//
+// 	console.log(friends)
+// });
 
 
 app.post("/api/friends", function(req, res) {

@@ -161,7 +161,7 @@
  Geek Me!</button>
 
     <hr>
-     
+
      <!-- Modal -->
   <div id="resultsModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -222,22 +222,23 @@
           photo: $("#photo").val(),
           scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
         }
-        console.log(userData);
-        // AJAX post the data to the friends API. 
+        // AJAX post the data to the friends API.
         var currentURL = window.location.origin;
         $.post(currentURL +"/api/friends", userData, function(data){
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#matchName").text(data.name);
           $('#matchImg').attr("src", data.photo);
-          // Show the modal with the best match 
+          // Show the modal with the best match
           $("#resultsModal").modal('toggle');
+          console.log(data);
         });
+          console.log(userData);
     }
     else
     {
       alert("Uh, you left some stuff blank.");
     }
-      
+
       return false;
     });
   </script>
